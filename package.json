@@ -1,6 +1,6 @@
 {
   "name": "@vacuumlabs/gitpkg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Publish packages as git tags",
   "main": "build/index.js",
   "scripts": {

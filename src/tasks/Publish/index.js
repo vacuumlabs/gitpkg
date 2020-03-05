@@ -40,7 +40,7 @@ export default class PublishTask extends Task {
 
     return {
       gitpkgRegistry: gitpkgRegistryURL,
-      gitpkgPackage: getGitTagName(this.pkg, this.config),
+      gitpkgPackage: await getGitTagName(this.pkg, this.config),
       name: this.pkg.name,
       version: this.pkg.version
     };
