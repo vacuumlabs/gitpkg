@@ -74,7 +74,7 @@
     "rimraf": "^3.0.2"
   },
   "gitpkg": {
-    "registry": "git@github.com:ramasilveyra/public-registry.git"
+    "registry": "git@github.com:vacuumlabs/gitpkg-public-registry.git"
   },
   "husky": {
     "hooks": {
