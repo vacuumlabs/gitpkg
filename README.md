@@ -43,9 +43,23 @@ Also you can publish any gitpkg package to the same repository, so you can have 
 
 <h2 align="center">Install</h2>
 
-**Node.js v6.5 or newer** is required.
+**Node.js v12 or newer** is required.
 
-### npm registry
+### gitpkg registry
+
+Via the yarn client:
+
+```bash
+$ yarn global add vacuumlabs/gitpkg-public-registry#gitpkg-v1.0.1
+```
+
+Via the npm client:
+
+```bash
+$ npm install -g vacuumlabs/gitpkg-public-registry#gitpkg-v1.0.1
+```
+
+### npm registry [OUT-OF-DATE]
 
 Via the yarn client:
 
@@ -57,20 +71,6 @@ Via the npm client:
 
 ```bash
 $ npm install -g gitpkg
-```
-
-### gitpkg registry
-
-Via the yarn client:
-
-```bash
-$ yarn global add ramasilveyra/public-registry#gitpkg-v1.0.0-beta.1-gitpkg
-```
-
-Via the npm client:
-
-```bash
-$ npm install -g ramasilveyra/public-registry#gitpkg-v1.0.0-beta.1-gitpkg
 ```
 
 <h2 align="center">Usage</h2>
@@ -132,7 +132,7 @@ module.exports = () => ({
 
 <h2 align="center">Contribute</h2>
 
-Feel free to dive in! [Open an issue](https://github.com/ramasilveyra/gitpkg/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/vacuumlabs/gitpkg/issues/new) or submit PRs.
 
 gitpkg follows the [Contributor Covenant](http://contributor-covenant.org/version/1/3/0/) Code of Conduct.
 
