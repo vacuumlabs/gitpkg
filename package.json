@@ -73,9 +73,6 @@
     "pretty-quick": "^2.0.1",
     "rimraf": "^3.0.2"
   },
-  "gitpkg": {
-    "registry": "git@github.com:vacuumlabs/gitpkg-public-registry.git"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged"
