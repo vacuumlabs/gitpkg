@@ -1,20 +1,16 @@
 import fs from 'fs';
 import path from 'path';
-import bluebird from 'bluebird';
 import semver from 'semver';
+import util from 'util';
 
-const readFile = bluebird.promisify(fs.readFile);
+const readFile = util.promisify(fs.readFile);
 
 export default async function readPackageManifest(pkgPath) {
   const packagePath = path.resolve(pkgPath, 'package.json');
-  try {
-    const pkg = JSON.parse(await readFile(packagePath, 'utf-8'));
-    pkg.scripts = pkg.scripts || {};
-    validatePackageJSON(pkg);
-    return pkg;
-  } catch (e) {
-    throw e;
-  }
+  const pkg = JSON.parse(await readFile(packagePath, 'utf-8'));
+  pkg.scripts = pkg.scripts || {};
+  validatePackageJSON(pkg);
+  return pkg;
 }
 
 function validatePackageJSON(pkg) {

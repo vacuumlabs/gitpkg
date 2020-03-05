@@ -12,7 +12,7 @@ describe('while using readConfig()', () => {
     expect(typeof validConfig.getTagName).toBe(typeof func);
   });
 
-  it('should read a valid bitpkg.config.js', async () => {
+  it('should read a valid gitpkg.config.js', async () => {
     const validConfig = await readConfig(path.resolve(filesPath, 'valid'));
 
     const func = () => {};

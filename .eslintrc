@@ -1,4 +1,8 @@
 {
-  "extends": "auth0-base/prettier",
+  "extends": [
+    "standard",
+    "prettier",
+    "prettier/standard"
+  ],
   "parser": "babel-eslint"
 }

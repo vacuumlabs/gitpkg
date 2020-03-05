@@ -1,10 +1,10 @@
 import findUp from 'find-up';
 import fs from 'fs';
-import bluebird from 'bluebird';
 import path from 'path';
+import util from 'util';
 import { defaultTagNameFormat } from '../Publish/get-git-tag-name';
 
-const access = bluebird.promisify(fs.access);
+const access = util.promisify(fs.access);
 
 /**
  * The name of the config file.
@@ -31,7 +31,7 @@ export async function getNearestConfigFile() {
 
 /**
  * Returns an object with configurable settings.
- * 
+ *
  * @param {string} directory Path to config file.
  */
 export default async function readConfig(configPath) {

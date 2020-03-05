@@ -10,7 +10,7 @@ describe('while calling getNpmClient() with only npm client installed', () => {
 
   beforeEach(() => {
     mockFn.mockReset();
-    mockFn.mockImplementation(() => Promise.reject());
+    mockFn.mockImplementation(() => Promise.reject(new Error('Mocked implementation')));
   });
 
   afterAll(() => {
