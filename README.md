@@ -95,6 +95,12 @@ This flag tells gitpkg to publish the package to a specific gitpkg registry.
 
 You can also set the gitpkg registry permanently by adding `"gitpkg":{"registry":"git@mygit.server:org/private-registry.git"}` to the package.json.
 
+<h2 align="center">Semver</h2>
+
+Since npm v5 semver is supported also on github tag messages - [npm version](https://github.com/npm/npm/releases/tag/v5.0.0), [yarn](https://github.com/yarnpkg/yarn/pull/5140). For example: `github:vacuumlabs/gitpkg#semver:^1.0.0`.
+
+Unfortunately this might conflict with github versioning if hosted on the same project and cannot be used with registries. A workaround is to create a secondary github repository to host the built `gitpkg` packages.
+
 <h2 align="center">Configuration</h2>
 
 You can also configure gitpkg with a config file. Create a file named `gitpkg.config.js` in the root of your project or in the root of a subpackage.
